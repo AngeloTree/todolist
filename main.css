@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 250px;
+    background-color: #f1eeee;
+    color: rgb(114, 113, 113);
+}
+
+.todo-container {
+    background-color: rgb(198, 198, 198);
+    text-align: center;
+    padding: 38px 40px;
+    color: rgb(57, 57, 57);
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.addBtn {
+    padding: 10px;
+    background: #d9d9d9;
+    color: #555;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+
+  .close {
+    background-color: rgb(174, 174, 174);
+    color: rgb(0, 0, 0);
+    padding: 2px 7px;
+    text-align: center;
+    cursor: pointer;
+  }
