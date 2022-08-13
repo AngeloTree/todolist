@@ -5,9 +5,7 @@ const myUL = document.getElementById("myUL");
 
 // click event in which adds new list items to the ul.
 myButton.addEventListener("click", () => {
-    console.log('click')
     newListItem = myInput.value;
-    console.log(`${newListItem}`);
     myInput.value = '';
     let li = document.createElement("li");
     li.appendChild(document.createTextNode(newListItem));
@@ -20,8 +18,8 @@ myButton.addEventListener("click", () => {
         myUL.appendChild(li);
         // Listens for click on the X to delete that list item.
         span.addEventListener("click", () => {
-            console.log('test');
             li.remove();
+            console.log('Li Deleted');
         });
       } else {
         console.log("Added will not be added..");
@@ -34,7 +32,6 @@ myButton.addEventListener("click", () => {
 myInput.onkeydown = (event) => {
     if(event.key === 'Enter') {
         newListItem = myInput.value;
-    console.log(`${newListItem}`);
     myInput.value = '';
     let li = document.createElement("li");
     li.appendChild(document.createTextNode(newListItem));
@@ -47,8 +44,8 @@ myInput.onkeydown = (event) => {
         myUL.appendChild(li);
         // Listens for click on the X to delete that list item.
         span.addEventListener("click", () => {
-            console.log('test');
             li.remove();
+            console.log('Li Deleted');
         });
       } else {
         console.log("Added will not be added..");
