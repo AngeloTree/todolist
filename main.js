@@ -18,6 +18,11 @@ myButton.addEventListener("click", () => {
     if (confirm("Would you like to add this list item?") == true) {
         console.log("Item Added!");
         myUL.appendChild(li);
+        // Listens for click on the X to delete that list item.
+        span.addEventListener("click", () => {
+            console.log('test');
+            li.remove();
+        });
       } else {
         console.log("Added will not be added..");
         li = null;
@@ -40,6 +45,11 @@ myInput.onkeydown = (event) => {
     if (confirm("Would you like to add this list item?") == true) {
         console.log("Item Added!");
         myUL.appendChild(li);
+        // Listens for click on the X to delete that list item.
+        span.addEventListener("click", () => {
+            console.log('test');
+            li.remove();
+        });
       } else {
         console.log("Added will not be added..");
         li = null;
